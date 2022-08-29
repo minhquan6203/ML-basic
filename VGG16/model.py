@@ -47,7 +47,7 @@ class BaseModel(object):
                 #fc layer 2
                 layers.Dense(4096, activation='relu'),
                 #output layer
-                layers.Dense(10, activation='softmax'),
+                layers.Dense(self.num_classes, activation='softmax'),
             ])
 
         return model
